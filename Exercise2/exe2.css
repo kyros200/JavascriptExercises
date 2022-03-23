@@ -1,3 +1,127 @@
-body {
-    background-color: aqua;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
+input, button {
+    all:unset
+}
+
+body {
+    background-color: #3db1d4;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: baseline; */
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin: 25px;
+    user-select: none;
+}
+
+.contentArea {
+    background-color: #fff;
+    height: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    border-top: 7px solid #aafab7;
+    border-left: 7px solid #aafab7;
+    border-bottom: 5px solid #56e36d;
+    border-right: 5px solid #56e36d;
+    box-shadow: #aafab7 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    overflow: none;
+    user-select: none;
+}
+
+.dataNascimento {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.inputNumber, input {
+    border: 2px solid #56e36d;
+    border-radius: 10px;
+    padding: 4px 4px;
+    font-size: 17px;
+    color: black;
+    outline: none;
+    background: transparent;
+    display: block;
+    text-align: start;
+}
+
+:is(input[type="number"]):focus {
+    border: 2px solid #aafab7;
+    transition: 0.3s;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.inputRadio {
+    width: 10px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+:where(input[type="radio"]):hover {
+    border: 2px solid #aafab7;
+    transition: 0.3s;
+}
+
+:where(input[type="radio"]):checked {
+    background-color: #56e36d;
+    transition: 0.3s;
+}
+
+.botao {
+    background-color: #56e36d;
+    width: 150px;
+    height: 55px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    background-color: #aafab7;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    user-select: none;
+}
+
+
+:where(input[type="number"])::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+} 
+/* Utilizado para retirar a box com seleção de number do input (webkit), o where é para selecionar todos os inputs type numbers para reduzir linha de código */
