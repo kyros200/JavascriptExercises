@@ -90,6 +90,12 @@ button {
     background-color: #9b8bd4;
 }
 
+.contagemResult {
+    overflow: auto;
+    margin-top: 10px;
+    user-select: all;
+}
+
 footer {
     text-align: center;
     color: #fff;
