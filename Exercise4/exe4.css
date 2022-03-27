@@ -79,6 +79,10 @@ button:hover {
     transition: 0.3s;
 }
 
+.tabuada {
+    overflow: auto;
+}
+
 footer {
     color: #3D8895;
     font-size: 30px;
