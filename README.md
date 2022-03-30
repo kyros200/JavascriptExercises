@@ -13,7 +13,7 @@
   </p>
 </p>
 
-<h2 align="center">Layoults:</h2>
+<h2 align="center">Layouts:</h2>
 
 <h3 align='center'>Exercício 1</h3>
 <p align='center'>
